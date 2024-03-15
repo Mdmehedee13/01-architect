@@ -71,6 +71,55 @@ border: 0;
 
 }
 
+/* main styles */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.team-img-container{
+    display: flex;
+    align-items: center;
+    padding-right: 70px;
+     padding-left: 70px; 
+}
+
+
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+
+.span-one{
+   
+    font-size: 45px;
+    font-weight: 500;
+    color: rgb(114, 114, 114);
+}
+
+
+.span-two{
+    font-size: 45px;
+    font-weight: 700;
+    color:rgb(19, 19, 19);
+}
+
+.span-three{
+    
+    font-size: 45px;
+    font-weight: 700;
+    color: rgb(255, 144, 14);
+}
+
+
+.team-container{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
 /* for mobile */
 @media screen and (max-width:576px) {
     header{
