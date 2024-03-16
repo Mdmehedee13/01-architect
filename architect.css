@@ -4,6 +4,14 @@
     font-family: "Work Sans", sans-serif;
 }
 
+
+/* shared style */
+
+.color-light-gray{
+    color: rgb(114, 114, 114);
+}
+
+
 header{
     background: rgba(255, 144, 14, 0.1);
     padding: 50px 140px;
@@ -53,9 +61,7 @@ nav li a{
     font-weight: 700px;
     color: rgb(19, 19, 19)
 }
-.banner-description{
-    color: rgb(114, 114, 114);
-}
+
 
 .btn-primary{
     border-radius: 8px;
@@ -81,8 +87,8 @@ main{
 .team-img-container{
     display: flex;
     align-items: center;
-    padding-right: 70px;
-     padding-left: 70px; 
+    padding: 70px;
+
 }
 
 
@@ -126,9 +132,16 @@ main{
      padding: 20px;
     }
     
-    nav{
+    nav,
+    .team-img-container{
         flex-direction: column;
     }
+
+    .team-img{
+        grid-template-columns: 1fr;
+    }
+
+    
 }
 
 /* for medium devices */
@@ -136,9 +149,13 @@ main{
     header{
         padding: 50px;
        }
-       nav{
+       nav, .team-img-container{
         flex-direction: column;
     }
-          
+    
+    .team-container{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
 
